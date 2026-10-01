@@ -136,3 +136,22 @@ a:focus-visible{outline:3px solid var(--pond);outline-offset:2px}
   .tbl.stack th{border-bottom:0;padding-bottom:2px;white-space:normal}
   .tbl.stack td{padding-top:2px;overflow-wrap:anywhere}
 }
+
+/* ---- map pins & Google Maps links ---- */
+svg a.pin{cursor:pointer}
+svg a.pin .pin-c{transition:r .15s}
+svg a.pin:hover .pin-c,svg a.pin:focus-visible .pin-c{r:18;stroke:#f2b63c}
+svg a.pin:focus{outline:none}
+.spot-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin-top:22px}
+.spot{background:#fff;border:2px solid var(--line);border-radius:18px;padding:14px 18px;scroll-margin-top:90px}
+.spot:target{border-color:var(--sun);box-shadow:0 0 0 4px #f2b63c55}
+.spot-head{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.spot-head b{flex:none;width:30px;height:30px;line-height:30px;text-align:center;border-radius:50%;color:#fff;font-size:.95rem}
+.spot-head h3{margin:0;font-size:1.05rem;color:var(--green-d);flex:1 1 140px}
+.spot p{margin:8px 0 0;font-size:.92rem}
+.gm-line{margin-top:10px!important;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+a.gmap{display:inline-block;background:#fff;color:#1a5fb4;border:2px solid #1a5fb4;border-radius:999px;padding:2px 14px;font-size:.85rem;font-weight:700;text-decoration:none}
+a.gmap:hover{background:#1a5fb4;color:#fff}
+.to-map{font-size:.8rem;color:var(--sub)}
+.sr{position:absolute;left:-9999px}
+.card .gm-line{margin-top:12px!important}
