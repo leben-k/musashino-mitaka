@@ -155,3 +155,10 @@ a.gmap:hover{background:#1a5fb4;color:#fff}
 .to-map{font-size:.8rem;color:var(--sub)}
 .sr{position:absolute;left:-9999px}
 .card .gm-line{margin-top:12px!important}
+
+/* ---- 広告表示（ads.js 用） ---- */
+[hidden]{display:none !important}
+.ad-body{margin-top:12px;text-align:center}
+.ad-body img{max-width:100%;height:auto}
+.ad-slot[data-rendered]{border-style:solid}
+.ad-row:has(.ad-slot[hidden]){grid-template-columns:1fr}
